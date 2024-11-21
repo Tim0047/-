@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int Number;
+    cin >> Number;
+
+    //cout << Number;
+
+    for(int i = 1; i <= Number; i++)
+    {
+        int j = Number - i;
+        //cout << j;
+
+        for(int i1=1 ; i1 <= j; i1++)
+        {
+            cout << " ";
+        }
+
+        for(int i1 =1; i1 <= i; i1++)
+        {
+            cout << "#";
+        }
+
+        cout << "  ";
+
+        for(int i1 =1; i1 <= i; i1++)
+        {
+            cout << "#";
+        }
+
+        for(int i1=1 ; i1 <= j; i1++)
+        {
+            cout << " ";
+        }
+
+        cout << "\n";
+    }
+
+}
